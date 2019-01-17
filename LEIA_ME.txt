@@ -1,1 +1,2 @@
 Para rodar o projeto, basta instalar as dependências com o comando npm install e depois iniciá-lo com o comando npm start.
+No navegador, vá para o endereço http://localhost:3000/
