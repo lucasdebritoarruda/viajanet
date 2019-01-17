@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body{
+  background-color: #ebebeb;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #fff;
+    text-align: center;
+    margin: 0;
+    .navbar-header{
+      display: inline-block;
+      a{
+        margin-top: -9px
+      }
+    }
+}
+
+.box{
+  padding-top: 50px;
+  text-align: center;
+  background: url("./img/Rio-motor.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  @media (max-width: 767px) { background: none; padding-top: 0; }
+  @media (max-width: 480px) { background: none; padding-top: 0; }
+  .container{
+    height: auto;
+  }
+}
+
+.nav-tabs{
+  background-color: none;
+  border: none;
+
+  @media (max-width: 767px) { background-color: #074985}
+  @media (max-width: 480px) { background-color: #074985}
+}
+
+.nav-tabs > li > a{
+  background-color: #1e5c90;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Asap', sans-serif;
+  font-size: 12pt;
+  margin-left: -1px;
+
+    strong{
+      @media (max-width: 1199px) { } //Apagar
+      @media (max-width: 991px) { } //Apagar
+      @media (max-width: 767px) { display: none; }
+      @media (max-width: 480px) { display: none; }
+    }
+
+    @media (max-width: 767px) { background-color: #074985}
+    @media (max-width: 480px) { background-color: #074985}
+
+}
+
+.nav-tabs > li > a:hover{
+    background-color: #2170bf !important;
+    border: none !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:none;
+    margin-left: -1px;
+}
+
+.nav-tabs > li.active > a{
+  background-color: #2170bf;
+  color: #fff;
+}
+
+.nav-tabs > li.active > a:hover{
+  background-color: #2170bf;
+  color: #fff;
+  margin-left: -1px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.line{
+  display: flex;
+  width: 100%;
+}
+
+.divider{
+  @media (max-width: 767px) { flex-direction: column;}
+  @media (max-width: 480px) { flex-direction: column;}
+}
+
+.block{
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  @media (max-width: 767px) { margin-right: 10px; }
+  @media (max-width: 480px) { margin-right: 10px;}
+}
+
+.searchField{
+  background-color: #2170bf;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #ffff;
+  height: auto;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 100%;
+  label{
+    @media (max-width: 767px) { font-size: 9pt; }
+    @media (max-width: 480px) { font-size: 9pt; }
+  }
+
+  .dateHalf{
+    display: flex;
+    width: 50%;
+    @media (max-width: 767px) { width: 100%}
+    @media (max-width: 480px) { width: 100%}
+  }
+
+  .quantHalf{
+    display: flex;
+    width: 50%;
+    @media (max-width: 767px) { width: 100%}
+    @media (max-width: 480px) { width: 100%}
+  }
+
+  .checkboxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    label{
+      .fix{
+        margin-left: -30px;
+      }
+      .label{
+        margin: 10px;
+        padding: 3px;
+        @media (max-width: 767px) { display: none;}
+        @media (max-width: 480px) { display: none;}
+      }
+    }
+  }
+  .opcoes{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    p{
+      margin-top: 10px;
+    }
+  }
+  .dateHalf{
+    display: flex;
+    width: 50%;
+    @media (max-width: 767px) { width: 100%}
+    @media (max-width: 480px) { width: 100%}
+  }
+
+  .btnHalf{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    .btn{
+      width: 30%;
+      @media (max-width: 767px) { width: 100%}
+      @media (max-width: 480px) { width: 100%}
+    }
+  }
+}

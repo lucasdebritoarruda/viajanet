@@ -1,0 +1,25 @@
+{
+  "name": "testeVJN",
+  "version": "1.0.0",
+  "description": "Flight tickets search engine",
+  "scripts": {
+    "watch": "gulp",
+    "start": "node app"
+  },
+  "author": "Lucas de Brito Arruda",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "express": "^4.16.4",
+    "gulp-cssimport": "^6.0.1",
+    "gulp-less": "^4.0.1",
+    "cors": "~2.8.3",
+    "body-parser": "~1.17.2"
+  }
+}

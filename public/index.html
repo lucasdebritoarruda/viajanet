@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ViajaNet - Passagens Aéreas com economia garantida!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <div class="navbar">
+      <div class="navbar-header"><a class="navbar-brand" href="#"><img src="./img/logo.svg"></a></div>
+    </div>
+    <div class="box">
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="active"><a><i class="fas fa-plane"></i><strong> Passagens Aéreas</strong></a></li>
+          <li><a><i class="fas fa-suitcase"></i><strong> Pacotes</strong></a></li>
+          <li><a> <i class="fas fa-car"></i><strong> Carros</strong></a></li>
+        </ul>
+        <div class="searchField column" ng-controller="searchCtrl as self" ng-app="viajaNetApp">
+          <div class="radioField">
+            <label class="radio-inline">
+              <input type="radio">Só ida
+            </label>
+            <label class="radio-inline">
+              <input type="radio">Ida e volta
+            </label>
+            <label class="radio-inline">
+              <input type="radio">Vários destinos
+            </label>
+          </div>
+          <div class="line">
+            <div class="column block">
+              <label>Informe sua origem:</label>
+              <input class="form-control" type="text" list="locations" automplete="on">
+              <datalist id="locations">
+                <option ng-repeat="location in self.locations" value="{{ location }}"></option>
+              </datalist>
+            </div>
+            <div class="column block">
+              <label>Informe seu destino:</label>
+              <input class="form-control" type="text" list="locations">
+              <datalist id="locations">
+                <option ng-repeat="location in self.locations" value="{{ location }}"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="line divider">
+            <div class="dateHalf">
+              <div class="column block">
+                <label>Data de ida:</label>
+                <input class="form-control" type="date">
+              </div>
+              <div class="column block">
+                <label>Data de volta</label>
+                <input class="form-control" type="date">
+              </div>
+            </div>
+            <div class="quantHalf">
+              <div class="column block">
+                <label>Adultos</label>
+                <select class="form-control">
+                  <option>1 adulto</option>
+                  <option>2 adultos</option>
+                  <option>3 adultos</option>
+                  <option>4 adultos</option>
+                  <option>5 adultos</option>
+                  <option>6 adultos</option>
+                  <option>7 adultos</option>
+                  <option>8 adultos</option>
+                  <option>9 adultos</option>
+                  <option>10 adultos</option>
+                </select>
+              </div>
+              <div class="column block">
+                <label>Crianças</label>
+                <select class="form-control">
+                  <option>Nenhuma</option>
+                  <option>1 criança</option>
+                  <option>2 crianças</option>
+                  <option>3 crianças</option>
+                  <option>4 crianças</option>
+                  <option>5 crianças</option>
+                  <option>6 crianças</option>
+                  <option>7 crianças</option>
+                  <option>8 crianças</option>
+                  <option>9 crianças</option>
+                </select>
+              </div>
+              <div class="column block">
+                <label>Bebês</label>
+                <select class="form-control">
+                  <option>Nenhuma</option>
+                  <option>1 bebê</option>
+                  <option>2 bebês</option>
+                  <option>3 bebês</option>
+                  <option>4 bebês</option>
+                  <option>5 bebês</option>
+                  <option>6 bebês</option>
+                  <option>7 bebês</option>
+                  <option>8 bebês</option>
+                  <option>9 bebês</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="checkbox-inline">
+              <input type="checkbox">Ainda não sei as datas das viagens
+            </label>
+            <label class="checkbox-inline">
+              <input class="fix" type="checkbox">Adicionar hotel<span class="label label-success">COMPRE JUNTO E ECONOMIZE ATÉ 30%</span>
+            </label>
+          </div>
+          <div class="opcoes">
+            <p>- Opções de busca	</p>
+            <div class="dateHalf">
+              <div class="column block">
+                <label>Horário de ida</label>
+                <select class="form-control">
+                  <option>Qualquer</option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+                  <option>Madrugada</option>
+                </select>
+              </div>
+              <div class="column block">
+                <label>Horário de volta</label>
+                <select class="form-control">
+                  <option>Qualquer</option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+                  <option>Madrugada</option>
+                </select>
+              </div>
+              <div class="column block">
+                <label>Classe</label>
+                <select class="form-control">
+                  <option>Qualquer</option>
+                </select>
+              </div>
+            </div>
+            <div class="dateHalf">
+              <label class="checkbox-inline">
+                <input type="checkbox">Ainda não sei as datas das viagens
+              </label>
+            </div>
+            <div class="btnHalf">
+              <button class="btn btn-warning"> <i class="fas fa-search"></i>Pesquisar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-messages.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+  <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.12/angular-material.js"></script>
+  <script src="./js/app.js"></script>
+</html>

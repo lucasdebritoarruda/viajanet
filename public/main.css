@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v8/KFOoCniXp96ayzse5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+html,
+body {
+  background-color: #ebebeb;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #ffff f;
+  text-align: center;
+  margin: 0;
+}
+.navbar .navbar-header {
+  display: inline-block;
+}
+.navbar .navbar-header a {
+  margin-top: -9px;
+}
+.box {
+  padding-top: 50px;
+  text-align: center;
+  background: url("./img/Rio-motor.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+}
+@media (max-width: 767px) {
+  .box {
+    background: none;
+    padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    background: none;
+    padding-top: 0;
+  }
+}
+.box .container {
+  height: auto;
+}
+.nav-tabs {
+  background-color: none;
+  border: none;
+}
+@media (max-width: 767px) {
+  .nav-tabs {
+    background-color: #074985;
+  }
+}
+@media (max-width: 480px) {
+  .nav-tabs {
+    background-color: #074985;
+  }
+}
+.nav-tabs > li > a {
+  background-color: #1e5c90;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Asap', sans-serif;
+  font-size: 12pt;
+  margin-left: -1px;
+}
+@media (max-width: 767px) {
+  .nav-tabs > li > a strong {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav-tabs > li > a strong {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .nav-tabs > li > a {
+    background-color: #074985;
+  }
+}
+@media (max-width: 480px) {
+  .nav-tabs > li > a {
+    background-color: #074985;
+  }
+}
+.nav-tabs > li > a:hover {
+  background-color: #2170bf !important;
+  border: none !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: none;
+  margin-left: -1px;
+}
+.nav-tabs > li.active > a {
+  background-color: #2170bf;
+  color: #fff;
+}
+.nav-tabs > li.active > a:hover {
+  background-color: #2170bf;
+  color: #fff;
+  margin-left: -1px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.line {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .divider {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .divider {
+    flex-direction: column;
+  }
+}
+.block {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .block {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .block {
+    margin-right: 10px;
+  }
+}
+.searchField {
+  background-color: #2170bf;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #ffff;
+  height: auto;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .searchField label {
+    font-size: 9pt;
+  }
+}
+@media (max-width: 480px) {
+  .searchField label {
+    font-size: 9pt;
+  }
+}
+.searchField .dateHalf {
+  display: flex;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .searchField .dateHalf {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .searchField .dateHalf {
+    width: 100%;
+  }
+}
+.searchField .quantHalf {
+  display: flex;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .searchField .quantHalf {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .searchField .quantHalf {
+    width: 100%;
+  }
+}
+.searchField .checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+.searchField .checkboxes label .fix {
+  margin-left: -30px;
+}
+.searchField .checkboxes label .label {
+  margin: 10px;
+  padding: 3px;
+}
+@media (max-width: 767px) {
+  .searchField .checkboxes label .label {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .searchField .checkboxes label .label {
+    display: none;
+  }
+}
+.searchField .opcoes {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.searchField .opcoes p {
+  margin-top: 10px;
+}
+.searchField .dateHalf {
+  display: flex;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .searchField .dateHalf {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .searchField .dateHalf {
+    width: 100%;
+  }
+}
+.searchField .btnHalf {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+.searchField .btnHalf .btn {
+  width: 30%;
+}
+@media (max-width: 767px) {
+  .searchField .btnHalf .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .searchField .btnHalf .btn {
+    width: 100%;
+  }
+}
